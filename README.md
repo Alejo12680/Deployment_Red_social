@@ -58,7 +58,7 @@ version: (1.0.0)
 description: API REST con stack MERN y autenticacion JWT para Red Social
 entry point: (index.js)
 test command:
-git repository:https://github.com/Alejo12680/RedSocial_Reack_JWT.git
+git repository:https://github.com/Alejo12680/Deployment_Red_social.git
 keywords :
 author: Alejandro Ramirez
 license: (ISC) ISC
@@ -86,7 +86,7 @@ Al instalar las dependencias, automáticamente se añade información al **packa
 
 2. **Instalar la dependencia de Mongoose:** permite trabajar con la Base de Datos de manera fácil, usando una capa de abstracción de métodos, permite trabajar con la base de datos más fácil que hacerlo directamente con consultas nativas de Mongo, es lo mismo, pero con el ODM. `npm install mogoose`
 
-3. **Instalar la dependencia de Mongoose - Pagination:** es una librería para hacer paginación con Mongoose, es como añadir un método a Mongoose. `npm install mongoose-pagination`
+3. **Instalar la dependencia de Mongoose - Pagination-v2:** es una librería para hacer paginación con Mongoose, es como añadir un método a Mongoose. `npm install mongoose-paginate-v2`
 
 4. **Instalar la dependencia Multer:** es una librería para subir archivos, imágenes, etc al servidor. npm install multer
 
@@ -109,7 +109,14 @@ Al instalar las dependencias, automáticamente se añade información al **packa
 12. **Instalar la dependencia de dotenv:** La variable de entorno NODE_ENV especifica el entorno en el que se ejecuta una aplicación (normalmente, desarrollo o producción). Una de las cosas más sencillas que puede hacer para mejorar el rendimiento es establecer NODE_ENV en “production”.
 `npm install dotenv`
 
+## INSTALAR LAS DEPENDENCIAS Y PAQUETES DEL PROYECTO
 
+Utilizamos el start watch para poder activar el proyecto en node. Esto lo colocamos en la seccion de `Debug` en el **Package.json** de esta forma:
+
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:watch": "node --watch index.js"
+  },
 
 
 
