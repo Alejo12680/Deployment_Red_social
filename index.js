@@ -1,9 +1,9 @@
 // Importaciones
 import connection from "./database/connection.js";
-import express, { json, urlencoded } from "express";
+import express from "express";
 import cors from "cors";
 import UserRoutes from './routes/user.js'
-import PublicationRoutes from './routes/publications.js'
+import PublicationRoutes from './routes/publication.js'
 import FollowRoutes from './routes/follow.js'
 import bodyParser from 'body-parser';
 import path from 'path';

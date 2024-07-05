@@ -23,8 +23,6 @@ const storage = multer.diskStorage({
 
 // Este tambien viene siendo un middleware para subir archivos
 const uploads = multer({storage});
-
-
 const router = Router();
 
 // Definir Rutas | Nombre de la ruta y luego va el metodo con el que usa
