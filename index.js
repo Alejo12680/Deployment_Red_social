@@ -1,11 +1,10 @@
 // Importaciones
-import connection from "./src/database/connection.js";
-import express from "express";
+import connection from "./database/connection.js";
+import express, { json, urlencoded } from "express";
 import cors from "cors";
-// Coneccion a las Routes el nombre del import se le colocan
-import UserRoutes from "./src/routes/user.js";
-import FollowRoutes from "./src/routes/follow.js";
-import PublicationRoutes from "./src/routes/publication.js";
+import UserRoutes from './routes/user.js'
+import PublicationRoutes from './routes/publications.js'
+import FollowRoutes from './routes/follow.js'
 import bodyParser from 'body-parser';
 import path from 'path';
 import { fileURLToPath } from 'url';
@@ -50,10 +49,10 @@ const __dirname = dirname(__filename);
 
 
 // Configuración para servir archivos estáticos (imágenes de avatar)
-app.use('/uploads/avatars', express.static(path.join(__dirname, 'uploads', 'avatars')));
+app.use('./uploads/avatars', express.static(path.join(__dirname, 'uploads', 'avatars')));
 
 // Configuración para servir archivos estáticos (imágenes de publicaciones)
-app.use('/uploads/publications', express.static(path.join(__dirname, 'uploads', 'publications')));
+app.use('./uploads/publications', express.static(path.join(__dirname, 'uploads', 'publications')));
 
 
 // Configurar el servidor para escuchar las peticiones HTTP

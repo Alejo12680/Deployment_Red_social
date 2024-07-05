@@ -118,6 +118,12 @@ Utilizamos el start watch para poder activar el proyecto en node. Esto lo coloca
     "start:watch": "node --watch index.js"
   },
 
+## PARA ACTUALIZAR LA FORMA DE IMPORTACION EN LOS MODELOS
+
+Nos dirigimos al **Package.json** antes de los "scripts" y despues del "main" vamos a colocar:
+`"type": "module",`
+ya con esta linea, nos va permitir hacer las importaciones como se realizan normalmente en react.
+
 
 
 
